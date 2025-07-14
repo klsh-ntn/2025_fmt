@@ -1,0 +1,366 @@
+% arara: xelatex
+\documentclass[11pt]{article} % размер шрифта
+\usepackage{libertine}
+
+\usepackage{tikz} % картинки в tikz
+\usepackage{microtype} % свешивание пунктуации
+
+\usepackage{array} % для столбцов фиксированной ширины
+
+\usepackage{indentfirst} % отступ в первом параграфе
+
+\usepackage{multicol} % текст в несколько колонок
+\usepackage{verbatim}
+
+\graphicspath{{images/}} % путь к картинкам
+
+\usepackage{sectsty} % для центрирования названий частей
+\allsectionsfont{\centering} % приказываем центрировать все sections
+
+\usepackage{amsmath, amssymb} % куча стандартных математических плюшек
+
+\usepackage[top=1cm, left=1cm, right=1cm, bottom=1cm]{geometry} % размер текста на странице
+
+\usepackage{lastpage} % чтобы узнать номер последней страницы
+
+\usepackage{enumitem} % дополнительные плюшки для списков
+%  например \begin{enumerate}[resume] позволяет продолжить нумерацию в новом списке
+\usepackage{caption} % подписи к картинкам без плавающего окружения figure
+
+\usepackage{circuitikz} % для рисовки электрических цепей
+
+\usepackage{physics} 
+
+\usepackage{fancyhdr} % весёлые колонтитулы
+\pagestyle{empty}
+%\lhead{ФМТ}
+%\chead{}
+%\rhead{КЛШ-2019}
+%\lfoot{}
+%\cfoot{}
+%\rfoot{\thepage/\pageref{LastPage}}
+%\renewcommand{\headrulewidth}{0.4pt}
+%\renewcommand{\footrulewidth}{0.4pt}
+
+
+
+\usepackage{todonotes} % для вставки в документ заметок о том, что осталось сделать
+% \todo{Здесь надо коэффициенты исправить}
+% \missingfigure{Здесь будет картина Последний день Помпеи}
+% команда \listoftodos — печатает все поставленные \todo'шки
+
+\usepackage{booktabs} % красивые таблицы
+% заповеди из документации:
+% 1. Не используйте вертикальные линии
+% 2. Не используйте двойные линии
+% 3. Единицы измерения помещайте в шапку таблицы
+% 4. Не сокращайте .1 вместо 0.1
+% 5. Повторяющееся значение повторяйте, а не говорите "то же"
+
+\usepackage{fontspec} % поддержка разных шрифтов
+\usepackage{polyglossia} % поддержка разных языков
+
+\setmainlanguage{russian}
+\setotherlanguages{english}
+
+% \setmainfont{Linux Libertine O} % выбираем шрифт
+% можно также попробовать Helvetica, Arial, Cambria и т.Д.
+% перешли на \usepackage{libertine}
+
+% чтобы использовать шрифт Linux Libertine на личном компе,
+% его надо предварительно скачать по ссылке
+% http://www.linuxlibertine.org/
+
+% \newfontfamily{\cyrillicfonttt}{Linux Libertine O}
+% пояснение зачем нужно шаманство с \newfontfamily
+% http://tex.stackexchange.com/questions/91507/
+
+\AddEnumerateCounter{\asbuk}{\russian@alph}{щ} % для списков с русскими буквами
+\setlist[enumerate, 2]{label=\asbuk*),ref=\asbuk*} % списки уровня 2 будут буквами а) б) ...
+
+
+% делаем короче интервал в списках
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+
+
+\newcommand{\shortname}{ФМТ демо-тур}
+
+\newcommand{\judgediscussion}{\textbf{TOP SECRET!!! Сдай листок или съешь его!!!} \hspace*{1cm} \textbf{\shortname} \hspace*{1cm} \textbf{Разбор задач}}
+\newcommand{\judgenormal}{\textbf{TOP SECRET!!! Судейский экземпляр!!!} \hspace*{1cm} \textbf{\shortname} \hspace*{1cm} \textbf{Обычные столы}}
+\newcommand{\judgetop}{\textbf{TOP SECRET!!! Судейский экземпляр!!!} \hspace*{1cm} \textbf{\shortname} \hspace*{1cm} \textbf{top-3 столы}}
+
+\newcommand{\putlogo}{
+\begin{center}
+\begin{tabular}{cc}
+\includegraphics[scale=0.25]{klshlogo.pdf} &
+\raisebox{1cm}{
+    {\Large\bf \shortname \hspace*{8cm} КЛШ $7^2 - 2$}
+}
+\end{tabular}
+\end{center}
+}
+
+\newcommand{\judgenotes}{
+    За одну итерацию оппонирования можно получить максимум 1 балл. 
+    Вольные стрелки приносят команде от 0 до 3 баллов. 
+    Штрафы за выход за три минуты при решении своей задачи: от 0 до 30 секунд — 1 балл штрафа, 
+    от 30 до 60 секунд — 2 балла штрафа и далее 3 балла штрафа.
+}
+
+
+\newcommand{\easymath}{
+Директор Лиза М. едет в КЛШ-47 на большом гусеничном тракторе с постоянной скоростью. 
+Внезапно на верхнюю часть гусеницы трактора прилетает жук. 
+
+Жук проползает один метр по гусенице трактора против направления движения и затем улетает. 
+За это время трактор проехал 24 метра. 
+
+На сколько относительно земли сместился жук во время своей поездки?
+}
+
+
+\newcommand{\soleasymath}{
+Верхняя часть гусеницы движется со скоростью 24 м/с относительно трактора.
+Ответ: $24 + 24 - 1 = 47$ м.
+}
+
+
+\newcommand{\hardmath}{
+Серёжа Ламзин занумеровал все 22 команды КЛШ-47 по порядку. 
+Затем он перемножил все номера команд и номер сезона. 
+
+И получил число $528XY034205547560960000$, но забыл цифры $X$ и $Y$.
+
+Помоги Серёже вспомнить $X$ и $Y$!
+}
+\newcommand{\solhardmath}{
+По признаку деления на 11 (сумма цифр на чётных местах минус сумма цифр на нечётных местах делится на 11): $5+Y-X \in \{0, 11\}$.
+По признаку делимости на 9 (сумма цифр делится на 9): $X+Y - 1 \in \{0, 9\}$.
+Рассматриваем 4 варианта, получаем $XY = 28$. 
+}
+
+% \newcommand{\hardmath}{
+% Двадцать четыре команды КЛШ-2023 поделили между собой все натуральные числа. 
+% Оказалось, что числа доставшиеся каждой команде — это бесконечная арифметическая прогрессия. 
+
+% Найди сумму величин, обратных разностям этих арифметических прогрессий. 
+% }
+% \newcommand{\solhardmath}{
+% Возьмём большое $n$ и посмотрим, какую долю этого ряда получила команда с разностью $d$.
+% Замечаем, что выбрав достаточно большое $n$, можно сколь угодно приблизить долю к $1/d$. 
+
+% Все натуральные числа полностью поделены между командами, 
+% поэтому сумма $1/d_{\alpha} + \ldots + 1/d_{\omega} = 1$. 
+
+% Угадан ответ 1 на примере частного случая: 0 баллов и переход. 
+% }
+
+
+\newcommand{\veryhardmath}{
+}
+
+\newcommand{\solveryhardmath}{
+Биссектрисы отрезают от трапеции равнобедренные треугольники по краям. 
+
+Обозначим точку пересечения биссектрис на основании $AD$ буквой $K$. Проведем перпендикуляр $KL$ на $BC$.
+По Пифагору, $BL = \sqrt{15^2 - 12^2} = 9$, $CL = \sqrt{13^2 - 12^2} = 5$. 
+Используя теорему синусов, $AB = AK = 12.5$, $CD = DK = 16.9$. 
+
+Стороны: $AB = 12.5$, $CD=16.9$, $AD = 12.5 + 16.9 = 29.4$, $BC = 14$. Периметр: $72.8$.
+}
+
+\newcommand{\easyphys}{
+Насос с мощностью двигателя 25 кВт поднимает $100\ \text{м}^3$ воду на высоту 6 м за 8 мин. Чему равен КПД установки?
+Ускорение свободного падения прими равным $10$ м/с$^2$.
+}
+
+\newcommand{\soleasyphys}{
+$1000 \cdot 100 \cdot 10 \cdot 6 / 25000/60/8 = 0.5 = 50\%$
+
+$1000 \cdot 100 \cdot 9.8 \cdot 6 / 25000/60/8 = 0.49 = 49\%$
+}
+
+
+
+
+
+\newcommand{\hardphys}{
+Даня Снегур соединил резисторы сопротивлением $R = 160$ Ом каждый в цепь: 
+
+\begin{circuitikz}
+\draw
+(11, 10) to[short, o-] (10, 10) to[generic] (6, 10) -- (6, 9) 
+to[generic] (8, 9) to[generic] (10, 9) to[generic] (12, 9) to[short, -o] (12, 10)
+(10, 10) -- (10, 9)
+(8, 9) -- (8, 8) to[generic] (12, 8) -- (12, 9)
+;
+\end{circuitikz}
+
+Помоги Дане найти сопротивление цепи!
+}
+\newcommand{\solhardphys}{
+Пошагово заменяем: $R+R = 2R$, $1/(2R) + 1/R = 1/(2/3R)$, $2/3R + R = 5/3R$, $1/(5/3R) + 1/R = 1/(5/8R)$.
+
+Ответ: $5/8R = 160 \cdot 5/8 = 100$ Ом.
+}
+
+
+
+
+\newcommand{\veryhardphys}{
+Из однородной проволоки сделана окружность сопротивлением 1 Ом. 
+Из той же проволоки к окружности прикреплены два ортогональных проводника-диаметра,
+соединенных в центре окружности. К концам одного диаметра присоединены две клеммы. 
+Найди сопротивление между точками $A$ и $B$. 
+
+
+\begin{tikzpicture}[scale=0.4]
+    \draw (0,0) circle (3);
+    \draw (-3,0) -- (3,0);
+    \draw (0,-3) -- (0,3);
+    \draw[fill=black] (3,0) circle (0.07);
+    \draw[fill=black] (0,0) circle (0.07);
+    \draw[fill=black] (0,3) circle (0.07);
+    \draw[fill=black] (-3,0) circle (0.07);
+    \draw[fill=black] (0,-3) circle (0.07);
+    \draw (3,0) node[anchor=west] {$B$};
+    \draw (-3,0) node[anchor=east] {$A$};
+\end{tikzpicture}
+}
+
+\newcommand{\solveryhardphys}{
+Диаметр, перпендикулярный диаметру с клеммами, можно не учитывать в силу нулевой разницы потенциалов. 
+Сопротивление диаметра в $\pi$ раз меньше сопротивления окружност и равно $1/\pi$.
+Получаем три параллельных резистора $1/r = 1/(1/2) + 1/(1/2) + 1/(1/\pi) = 4 + \pi$ и $r=1/(4+\pi)$.
+
+Конкретно в этой задаче за отсутствие размерности не штрафуем!
+}
+
+
+\begin{document}
+
+\judgediscussion
+
+\begin{enumerate}
+\item \easymath
+
+\soleasymath
+\item \hardmath
+
+\solhardmath
+\item \easyphys
+
+\soleasyphys
+\item \hardphys
+
+\solhardphys
+\end{enumerate}
+
+% Задачи для топ-3 столов: %% комментируем-раскомментируем, если деления задач по столам нет
+% \begin{enumerate}[resume]
+% \item \veryhardmath
+% \solveryhardmath
+% \item \veryhardphys
+% \solveryhardphys
+% \end{enumerate}
+
+\newpage
+
+\judgenormal
+
+\begin{small}
+    \judgenotes
+\end{small}
+
+\begin{enumerate}
+    \item \easymath 
+    
+    \soleasymath
+    \item \hardmath 
+    
+    \solhardmath
+    \item \easyphys 
+    
+    \soleasyphys
+    \item \hardphys 
+    
+    \solhardphys
+\end{enumerate}
+
+
+
+\newpage % школьный экземпляр обычных столов
+\putlogo
+
+\begin{enumerate}
+    \item \easymath
+    \item \hardmath
+    \item \easyphys
+    \item \hardphys
+\end{enumerate}
+
+\vfill
+
+\putlogo
+
+\begin{enumerate}
+    \item \easymath
+    \item \hardmath
+    \item \easyphys
+    \item \hardphys
+\end{enumerate}
+
+\end{document} %% если деления задач по столам нет
+
+
+\newpage 
+
+\judgetop
+
+\begin{small}
+    \judgenotes
+\end{\small}
+
+\begin{enumerate}
+    \item \easymath
+    
+    \soleasymath
+    \item \veryhardmath 
+    
+    \solveryhardmath
+    \item \hardphys 
+    
+    \solhardphys
+    \item \veryhardphys 
+    
+    \solveryhardphys
+\end{enumerate}
+
+\newpage %% школьный экземпляр top3 столов
+
+\putlogo
+
+\begin{enumerate}
+    \item \easymath
+    \item \veryhardmath
+    \item \hardphys
+    \item \veryhardphys
+\end{enumerate}
+
+\vfill
+
+\putlogo
+
+\begin{enumerate}
+    \item \easymath
+    \item \veryhardmath
+    \item \hardphys
+    \item \veryhardphys
+\end{enumerate}
+
+
+\end{document}
+
+
