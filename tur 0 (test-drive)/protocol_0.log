@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.21)  14 JUL 2025 22:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.21)  15 JUL 2025 14:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -730,23 +730,23 @@ File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
 \openout1 = `protocol_0.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Info: Redefining \th on input line 204.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 185.
+LaTeX Font Info:    ... okay on input line 185.
+LaTeX Info: Redefining \th on input line 185.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -804,69 +804,59 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 <klsh_logo.pdf, id=4, 224.84pt x 224.84pt>
 File: klsh_logo.pdf Graphic file (type pdf)
 <use klsh_logo.pdf>
-Package pdftex.def Info: klsh_logo.pdf  used on input line 207.
+Package pdftex.def Info: klsh_logo.pdf  used on input line 188.
 (pdftex.def)             Requested size: 53.50809pt x 53.50641pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 207.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 188.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 207.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 188.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (5.22096pt too wide) in paragraph at lines 207--207
+Overfull \hbox (5.22096pt too wide) in paragraph at lines 188--188
 []$[]$ $[]$ $[]$ 
  []
 
 \g__tikzsymbols_savebox_F_0 g 0 G_12_Smiley_1.6_none_box=\box72
 
-Overfull \hbox (2.70203pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.70203pt too wide) in paragraph at lines 188--188
  []|[]| 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (4.97176pt too wide) in paragraph at lines 207--207
+Overfull \hbox (4.97176pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Overfull \hbox (2.66667pt too wide) in paragraph at lines 207--207
+Overfull \hbox (315.64697pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
- []
-
-
-Overfull \hbox (4.18068pt too wide) in paragraph at lines 207--207
-[][] 
- []
-
-
-Overfull \hbox (2.72632pt too wide) in paragraph at lines 207--207
-[]$[]$ |  $[]$ 
  []
 
 
@@ -876,61 +866,51 @@ Overfull \hbox (2.72632pt too wide) in paragraph at lines 207--207
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc} <./klsh_logo.pdf>]
 File: klsh_logo.pdf Graphic file (type pdf)
 <use klsh_logo.pdf>
-Package pdftex.def Info: klsh_logo.pdf  used on input line 207.
+Package pdftex.def Info: klsh_logo.pdf  used on input line 188.
 (pdftex.def)             Requested size: 53.50809pt x 53.50641pt.
 
-Overfull \hbox (5.22096pt too wide) in paragraph at lines 207--207
+Overfull \hbox (5.22096pt too wide) in paragraph at lines 188--188
 []$[]$ $[]$ $[]$ 
  []
 
 
-Overfull \hbox (2.70203pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.70203pt too wide) in paragraph at lines 188--188
  []|[]| 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (4.97176pt too wide) in paragraph at lines 207--207
+Overfull \hbox (4.97176pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Overfull \hbox (2.66667pt too wide) in paragraph at lines 207--207
+Overfull \hbox (315.64697pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
- []
-
-
-Overfull \hbox (4.18068pt too wide) in paragraph at lines 207--207
-[][] 
- []
-
-
-Overfull \hbox (2.72632pt too wide) in paragraph at lines 207--207
-[]$[]$ |  $[]$ 
  []
 
 
@@ -938,61 +918,51 @@ Overfull \hbox (2.72632pt too wide) in paragraph at lines 207--207
 [2]
 File: klsh_logo.pdf Graphic file (type pdf)
 <use klsh_logo.pdf>
-Package pdftex.def Info: klsh_logo.pdf  used on input line 207.
+Package pdftex.def Info: klsh_logo.pdf  used on input line 188.
 (pdftex.def)             Requested size: 53.50809pt x 53.50641pt.
 
-Overfull \hbox (5.22096pt too wide) in paragraph at lines 207--207
+Overfull \hbox (5.22096pt too wide) in paragraph at lines 188--188
 []$[]$ $[]$ $[]$ 
  []
 
 
-Overfull \hbox (2.70203pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.70203pt too wide) in paragraph at lines 188--188
  []|[]| 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (4.97176pt too wide) in paragraph at lines 207--207
+Overfull \hbox (4.97176pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Overfull \hbox (2.66667pt too wide) in paragraph at lines 207--207
+Overfull \hbox (315.64697pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
- []
-
-
-Overfull \hbox (4.18068pt too wide) in paragraph at lines 207--207
-[][] 
- []
-
-
-Overfull \hbox (2.72632pt too wide) in paragraph at lines 207--207
-[]$[]$ |  $[]$ 
  []
 
 
@@ -1000,61 +970,51 @@ Overfull \hbox (2.72632pt too wide) in paragraph at lines 207--207
 [3]
 File: klsh_logo.pdf Graphic file (type pdf)
 <use klsh_logo.pdf>
-Package pdftex.def Info: klsh_logo.pdf  used on input line 207.
+Package pdftex.def Info: klsh_logo.pdf  used on input line 188.
 (pdftex.def)             Requested size: 53.50809pt x 53.50641pt.
 
-Overfull \hbox (5.22096pt too wide) in paragraph at lines 207--207
+Overfull \hbox (5.22096pt too wide) in paragraph at lines 188--188
 []$[]$ $[]$ $[]$ 
  []
 
 
-Overfull \hbox (2.70203pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.70203pt too wide) in paragraph at lines 188--188
  []|[]| 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (4.97176pt too wide) in paragraph at lines 207--207
+Overfull \hbox (4.97176pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Overfull \hbox (2.66667pt too wide) in paragraph at lines 207--207
+Overfull \hbox (315.64697pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
- []
-
-
-Overfull \hbox (4.18068pt too wide) in paragraph at lines 207--207
-[][] 
- []
-
-
-Overfull \hbox (2.72632pt too wide) in paragraph at lines 207--207
-[]$[]$ |  $[]$ 
  []
 
 
@@ -1062,61 +1022,51 @@ Overfull \hbox (2.72632pt too wide) in paragraph at lines 207--207
 [4]
 File: klsh_logo.pdf Graphic file (type pdf)
 <use klsh_logo.pdf>
-Package pdftex.def Info: klsh_logo.pdf  used on input line 207.
+Package pdftex.def Info: klsh_logo.pdf  used on input line 188.
 (pdftex.def)             Requested size: 53.50809pt x 53.50641pt.
 
-Overfull \hbox (5.22096pt too wide) in paragraph at lines 207--207
+Overfull \hbox (5.22096pt too wide) in paragraph at lines 188--188
 []$[]$ $[]$ $[]$ 
  []
 
 
-Overfull \hbox (2.70203pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.70203pt too wide) in paragraph at lines 188--188
  []|[]| 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (4.97176pt too wide) in paragraph at lines 207--207
+Overfull \hbox (4.97176pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Overfull \hbox (2.66667pt too wide) in paragraph at lines 207--207
+Overfull \hbox (315.64697pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
- []
-
-
-Overfull \hbox (4.18068pt too wide) in paragraph at lines 207--207
-[][] 
- []
-
-
-Overfull \hbox (2.72632pt too wide) in paragraph at lines 207--207
-[]$[]$ |  $[]$ 
  []
 
 
@@ -1124,61 +1074,51 @@ Overfull \hbox (2.72632pt too wide) in paragraph at lines 207--207
 [5]
 File: klsh_logo.pdf Graphic file (type pdf)
 <use klsh_logo.pdf>
-Package pdftex.def Info: klsh_logo.pdf  used on input line 207.
+Package pdftex.def Info: klsh_logo.pdf  used on input line 188.
 (pdftex.def)             Requested size: 53.50809pt x 53.50641pt.
 
-Overfull \hbox (5.22096pt too wide) in paragraph at lines 207--207
+Overfull \hbox (5.22096pt too wide) in paragraph at lines 188--188
 []$[]$ $[]$ $[]$ 
  []
 
 
-Overfull \hbox (2.70203pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.70203pt too wide) in paragraph at lines 188--188
  []|[]| 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (4.97176pt too wide) in paragraph at lines 207--207
+Overfull \hbox (4.97176pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Overfull \hbox (2.66667pt too wide) in paragraph at lines 207--207
+Overfull \hbox (315.64697pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
- []
-
-
-Overfull \hbox (4.18068pt too wide) in paragraph at lines 207--207
-[][] 
- []
-
-
-Overfull \hbox (2.72632pt too wide) in paragraph at lines 207--207
-[]$[]$ |  $[]$ 
  []
 
 
@@ -1186,61 +1126,51 @@ Overfull \hbox (2.72632pt too wide) in paragraph at lines 207--207
 [6]
 File: klsh_logo.pdf Graphic file (type pdf)
 <use klsh_logo.pdf>
-Package pdftex.def Info: klsh_logo.pdf  used on input line 207.
+Package pdftex.def Info: klsh_logo.pdf  used on input line 188.
 (pdftex.def)             Requested size: 53.50809pt x 53.50641pt.
 
-Overfull \hbox (5.22096pt too wide) in paragraph at lines 207--207
+Overfull \hbox (5.22096pt too wide) in paragraph at lines 188--188
 []$[]$ $[]$ $[]$ 
  []
 
 
-Overfull \hbox (2.70203pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.70203pt too wide) in paragraph at lines 188--188
  []|[]| 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (4.97176pt too wide) in paragraph at lines 207--207
+Overfull \hbox (4.97176pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Overfull \hbox (2.66667pt too wide) in paragraph at lines 207--207
+Overfull \hbox (315.64697pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
- []
-
-
-Overfull \hbox (4.18068pt too wide) in paragraph at lines 207--207
-[][] 
- []
-
-
-Overfull \hbox (2.72632pt too wide) in paragraph at lines 207--207
-[]$[]$ |  $[]$ 
  []
 
 
@@ -1248,61 +1178,51 @@ Overfull \hbox (2.72632pt too wide) in paragraph at lines 207--207
 [7]
 File: klsh_logo.pdf Graphic file (type pdf)
 <use klsh_logo.pdf>
-Package pdftex.def Info: klsh_logo.pdf  used on input line 207.
+Package pdftex.def Info: klsh_logo.pdf  used on input line 188.
 (pdftex.def)             Requested size: 53.50809pt x 53.50641pt.
 
-Overfull \hbox (5.22096pt too wide) in paragraph at lines 207--207
+Overfull \hbox (5.22096pt too wide) in paragraph at lines 188--188
 []$[]$ $[]$ $[]$ 
  []
 
 
-Overfull \hbox (2.70203pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.70203pt too wide) in paragraph at lines 188--188
  []|[]| 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (4.97176pt too wide) in paragraph at lines 207--207
+Overfull \hbox (4.97176pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Overfull \hbox (2.66667pt too wide) in paragraph at lines 207--207
+Overfull \hbox (315.64697pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
- []
-
-
-Overfull \hbox (4.18068pt too wide) in paragraph at lines 207--207
-[][] 
- []
-
-
-Overfull \hbox (2.72632pt too wide) in paragraph at lines 207--207
-[]$[]$ |  $[]$ 
  []
 
 
@@ -1310,61 +1230,51 @@ Overfull \hbox (2.72632pt too wide) in paragraph at lines 207--207
 [8]
 File: klsh_logo.pdf Graphic file (type pdf)
 <use klsh_logo.pdf>
-Package pdftex.def Info: klsh_logo.pdf  used on input line 207.
+Package pdftex.def Info: klsh_logo.pdf  used on input line 188.
 (pdftex.def)             Requested size: 53.50809pt x 53.50641pt.
 
-Overfull \hbox (5.22096pt too wide) in paragraph at lines 207--207
+Overfull \hbox (5.22096pt too wide) in paragraph at lines 188--188
 []$[]$ $[]$ $[]$ 
  []
 
 
-Overfull \hbox (2.70203pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.70203pt too wide) in paragraph at lines 188--188
  []|[]| 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (4.97176pt too wide) in paragraph at lines 207--207
+Overfull \hbox (4.97176pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Overfull \hbox (2.66667pt too wide) in paragraph at lines 207--207
+Overfull \hbox (315.64697pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
- []
-
-
-Overfull \hbox (4.18068pt too wide) in paragraph at lines 207--207
-[][] 
- []
-
-
-Overfull \hbox (2.72632pt too wide) in paragraph at lines 207--207
-[]$[]$ |  $[]$ 
  []
 
 
@@ -1372,61 +1282,51 @@ Overfull \hbox (2.72632pt too wide) in paragraph at lines 207--207
 [9]
 File: klsh_logo.pdf Graphic file (type pdf)
 <use klsh_logo.pdf>
-Package pdftex.def Info: klsh_logo.pdf  used on input line 207.
+Package pdftex.def Info: klsh_logo.pdf  used on input line 188.
 (pdftex.def)             Requested size: 53.50809pt x 53.50641pt.
 
-Overfull \hbox (5.22096pt too wide) in paragraph at lines 207--207
+Overfull \hbox (5.22096pt too wide) in paragraph at lines 188--188
 []$[]$ $[]$ $[]$ 
  []
 
 
-Overfull \hbox (2.70203pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.70203pt too wide) in paragraph at lines 188--188
  []|[]| 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (4.97176pt too wide) in paragraph at lines 207--207
+Overfull \hbox (4.97176pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Overfull \hbox (2.66667pt too wide) in paragraph at lines 207--207
+Overfull \hbox (315.64697pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
- []
-
-
-Overfull \hbox (4.18068pt too wide) in paragraph at lines 207--207
-[][] 
- []
-
-
-Overfull \hbox (2.72632pt too wide) in paragraph at lines 207--207
-[]$[]$ |  $[]$ 
  []
 
 
@@ -1434,61 +1334,51 @@ Overfull \hbox (2.72632pt too wide) in paragraph at lines 207--207
 [10]
 File: klsh_logo.pdf Graphic file (type pdf)
 <use klsh_logo.pdf>
-Package pdftex.def Info: klsh_logo.pdf  used on input line 207.
+Package pdftex.def Info: klsh_logo.pdf  used on input line 188.
 (pdftex.def)             Requested size: 53.50809pt x 53.50641pt.
 
-Overfull \hbox (5.22096pt too wide) in paragraph at lines 207--207
+Overfull \hbox (5.22096pt too wide) in paragraph at lines 188--188
 []$[]$ $[]$ $[]$ 
  []
 
 
-Overfull \hbox (2.70203pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.70203pt too wide) in paragraph at lines 188--188
  []|[]| 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (2.03722pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.03722pt too wide) in paragraph at lines 188--188
  []|\T2A/cmr/m/n/12 балл 
  []
 
 
-Overfull \hbox (4.97176pt too wide) in paragraph at lines 207--207
+Overfull \hbox (4.97176pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Overfull \hbox (2.66667pt too wide) in paragraph at lines 207--207
+Overfull \hbox (315.64697pt too wide) in paragraph at lines 188--188
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--207
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 
- []
-
-
-Overfull \hbox (4.18068pt too wide) in paragraph at lines 207--207
-[][] 
- []
-
-
-Overfull \hbox (2.72632pt too wide) in paragraph at lines 207--207
-[]$[]$ |  $[]$ 
  []
 
 
@@ -1506,13 +1396,13 @@ L3 programming layer <2025-01-18>
 Here is how much of TeX's memory you used:
  17660 strings out of 473190
  356869 string characters out of 5715800
- 781631 words of memory out of 5000000
+ 777298 words of memory out of 5000000
  40595 multiletter control sequences out of 15000+600000
  574849 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,105p,573b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on protocol_0.pdf (13 pages, 151719 bytes).
+Output written on protocol_0.pdf (13 pages, 156679 bytes).
 PDF statistics:
  93 PDF objects out of 1000 (max. 8388607)
  60 compressed objects within 1 object stream
