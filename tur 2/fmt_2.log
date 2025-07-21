@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.21)  21 JUL 2025 02:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.21)  21 JUL 2025 14:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -680,7 +680,7 @@ l.101 \msg_fatal:nn {fontspec} {cannot-use-pdftex}
 Here is how much of TeX's memory you used:
  38633 strings out of 473190
  941388 string characters out of 5715800
- 1594094 words of memory out of 5000000
+ 1594095 words of memory out of 5000000
  61516 multiletter control sequences out of 15000+600000
  559137 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191

@@ -93,12 +93,15 @@
 \newcommand{\anecdote}{Рубрика \textbf{анекдот} тура
     \begin{small}
     \begin{displayquote} 
-        \it 
+        \it Деревенский кузнец сказал новому подмастерью: 
+        — Сейчас выну из огня подкову. Как кивну головой, бей по ней со всей дури молотом. 
+        Так новичок–подмастерье сразу стал кузнецом.
     \end{displayquote}
     \end{small} % сюда пишем анекдот
 }
 
-\newcommand{\judgediscussion}{\textbf{TOP SECRET!!! Сдай листок или съешь его!!!} \hspace*{1cm} \textbf{\shortname} \hspace*{1cm} \textbf{Разбор задач}}
+\newcommand{\judgediscussioneasy}{\textbf{TOP SECRET!!! Сдай листок или съешь его!!!} \hspace*{1cm} \textbf{\shortname} \hspace*{1cm} \textbf{Разбор задач. Обычные столы.}}
+\newcommand{\judgediscussionhard}{\textbf{TOP SECRET!!! Сдай листок или съешь его!!!} \hspace*{1cm} \textbf{\shortname} \hspace*{1cm} \textbf{Разбор задач. top-3 столы.}}
 \newcommand{\judgenormal}{\textbf{TOP SECRET!!! Судейский экземпляр!!!} \hspace*{1cm} \textbf{\shortname} \hspace*{1cm} \textbf{Обычные столы}}
 \newcommand{\judgetop}{\textbf{TOP SECRET!!! Судейский экземпляр!!!} \hspace*{1cm} \textbf{\shortname} \hspace*{1cm} \textbf{top-3 столы}}
 
@@ -118,6 +121,7 @@
     Вольные стрелки приносят команде от 0 до 3 баллов. 
     Штрафы за выход за три минуты при решении своей задачи: от 0 до 30 секунд — 1 балл штрафа, 
     от 30 до 60 секунд — 2 балла штрафа и далее 3 балла штрафа.
+    Вольные стрелки не могут заявлять одну задачу более одного раза.
 }
 
 
@@ -134,6 +138,8 @@
         \end{cases} \Rightarrow f(2) = 2.5
     \end{equation*}
     Ответ: 2.5
+
+    2 балла - верная система уравнений, но допущена арифметическая ошибка.
 }
 
 \newcommand{\hardmath}{
@@ -141,10 +147,12 @@
 }
 
 \newcommand{\solhardmath}{
-    Пусть $y$ сторона ромба, $ME = x, MD = 5x$. Тогда $\sqrt{36x^2 + y^2} = 5$. Также из подобия $EC = y/4$, тогда $36x^2 + \frac{y^2}{25} = y^2$. Отсюда $36x^2 = \frac{24 y^2}{25}$.
+    Пусть $y$ сторона ромба, $ME = x, MD = 5x$. Тогда $\sqrt{36x^2 + y^2} = 5$. Также из подобия $EC = y/5$, тогда $36x^2 + \frac{y^2}{25} = y^2$. Отсюда $36x^2 = \frac{24 y^2}{25}$.
     Тогда $y \sqrt{\frac{24}{25} + 1} = 5 \Rightarrow y = \frac{25}{7}$.
 
     Ответ: $25/7$
+
+    2 балла - арифметическая ошибка, но верно написаны обе теоремы Пифагора.
     }
 
 
@@ -161,6 +169,8 @@
     первый сделает $0$ раундов, второй – $1$, третий – $2$, ..., десятый – $9$. Каждый отдаст не более  $9∙9 = 81$ шишек.  
     
     Ответ: $45$
+
+    1 балл - правильный пример; 2 балла - верная оценка; 3 балла - оценка + пример.
 }
 
 \newcommand{\easyphys}{
@@ -171,11 +181,13 @@
     Равенство сил $(m + \rho_2 Sh)g = \rho_1gSh \Rightarrow S = \frac{m}{h(\rho_1 - \rho_2)}$
 
     Ответ: $\frac{m}{h(\rho_1 - \rho_2)}$
+
+    2 балла - написано равеноство сил, но допущена арифметическая ошибка.
 }
 \newcommand{\hardphysbold}{
-    Тапок пнули вертикально вверх с поверхности земли. Расстояние $l$ между этим телом и неподвижным Никитой Терентьевым, расположенным на уступе точно под местом запуска камня, изменяется со временем $t$ по закону, показанному на графике (см. рисунок). Чему равна начальная скорость тела? Величины $l_0$, $l_1$ считайте известными, ускорение свободного падения равно $g$.
+    Ваня Адо пнул тапок вертикально вверх с поверхности земли. Расстояние $l$ между тапком и неподвижным Никитой Терентьевым, свисающим с Башни Звездочета точно под местом запуска тапка, изменяется со временем $t$ по закону, показанному на графике (см. рисунок). Чему равна начальная скорость тапка? Величины $l_0$, $l_1$ считайте известными, ускорение свободного падения равно $g$.
     \begin{center}
-        \includegraphics[width=0.3\textwidth]{hard_l2.eps}
+        \includegraphics[width=0.27\textwidth]{hard_l2.eps}
     \end{center}
 }
 
@@ -188,34 +200,25 @@
 }
 
 \newcommand{\hardphyshair}{
-    Тапок пнули вертикально вверх с поверхности земли. Расстояние $l$ между тапком и неподвижным Никитой Терентьевым изменяется со временем $t$ по закону, показанному на графике (см. рисунок). Чему равна начальная скорость тела? Величины $l_0$, $l_1$ и $l_2$ считайте известными, ускорение свободного падения равно $g$.
+    Ваня Адо пнул тапок вертикально вверх с поверхности земли. Расстояние $l$ между тапком и неподвижным Никитой Терентьевым, находящимся на Башне Звездочета, изменяется со временем $t$ по закону, показанному на графике (см. рисунок). Чему равна начальная скорость тапка? Величины $l_0$, $l_1$ и $l_2$ считайте известными, ускорение свободного падения равно $g$.
 
     \begin{center}
-        \includegraphics[width=0.25\textwidth]{hard_l1.eps}
+        \includegraphics[width=0.21\textwidth]{hard_l1.eps}
     \end{center}
 }
 
 \newcommand{\solhardphyshair}{
-    Наблюдатель расположен в координате $(a, h)$ от точки броска. Тогда
-    \begin{equation*}
-        l_0 = \sqrt{h^2 + a^2},\ l_2 = a,\ l_1 = \sqrt{a^2 + (y_{max} - h)^2}
-    \end{equation*}
-
-    Максимальная высота подъема
-    \begin{equation*}
-        h = \sqrt{l_0^2 - l_2^2} \Rightarrow y_{\text{max}} = \sqrt{l_0^2 - l_2^2} + \sqrt{l_1^2 - l_2^2}
-    \end{equation*}
-
-    Начальная скорость
-    \begin{equation*}
-        v_0 = \sqrt{2gy_{\text{max}}} = \sqrt{2g \Bigl[ \sqrt{l_0^2 - l_2^2} + \sqrt{l_1^2 - l_2^2} \Bigr]}
-    \end{equation*}
+    Наблюдатель расположен в координате $(a, h)$ от точки броска. Тогда: $l_0 = \sqrt{h^2 + a^2},\ l_2 = a,\ l_1 = \sqrt{a^2 + (y_{max} - h)^2}$.
+    Максимальная высота подъем: $h = \sqrt{l_0^2 - l_2^2} \Rightarrow y_{\text{max}} = \sqrt{l_0^2 - l_2^2} + \sqrt{l_1^2 - l_2^2}$. 
+    Начальная скорость: $v_0 = \sqrt{2gy_{\text{max}}} = \sqrt{2g \Bigl[ \sqrt{l_0^2 - l_2^2} + \sqrt{l_1^2 - l_2^2} \Bigr]}$.
     Ответ: $\sqrt{2g \Bigl[ \sqrt{l_0^2 - l_2^2} + \sqrt{l_1^2 - l_2^2} \Bigr]}$
+
+    1 балл - правильный треугольник; 2 балл - найдена макс. высота подъема/ верно записан ЗСЭ
 }
 
 \begin{document}
 
-\judgediscussion
+\judgediscussioneasy
 
 \begin{small}
     \anecdote
@@ -237,11 +240,50 @@
 \solhardphysbold
 \end{enumerate}
 
-% Задачи для топ-3 столов: %% комментируем-раскомментируем, если деления задач по столам нет
-\begin{enumerate}[resume]
+\newpage
+
+\judgediscussioneasy
+
+\begin{small}
+    \anecdote
+\end{small}
+
+
+\begin{enumerate}
+\item \easymath
+
+\soleasymath
+\item \hardmath
+
+\solhardmath
+\item \easyphys
+
+\soleasyphys
+\item \hardphysbold
+
+\solhardphysbold
+\end{enumerate}
+
+\newpage
+
+%%% ТОП-3 СТОЛА %%%
+\judgediscussionhard
+
+\begin{small}
+    \anecdote
+\end{small}
+
+
+\begin{enumerate}
+\item \hardmath
+
+\solhardmath
 \item \veryhardmath
 
 \solveryhardmath
+\item \easyphys
+
+\soleasyphys
 \item \hardphyshair
 
 \solhardphyshair
@@ -249,7 +291,7 @@
 
 \newpage
 
-\judgediscussion
+\judgediscussionhard
 
 \begin{small}
     \anecdote
@@ -257,20 +299,21 @@
 
 
 \begin{enumerate}
-\item \easymath
-
-\soleasymath
 \item \hardmath
 
 \solhardmath
+\item \veryhardmath
+
+\solveryhardmath
 \item \easyphys
 
 \soleasyphys
-\item \hardphysbold
+\item \hardphyshair
 
-\solhardphysbold
+\solhardphyshair
 \end{enumerate}
 
+%%% ТОП 3 СТОЛА %%%
 \newpage
 
 \judgenormal
@@ -306,7 +349,7 @@
     \item \hardphysbold
 \end{enumerate}
 
-\vfill
+\vspace{1pt}
 
 \putlogo
 
