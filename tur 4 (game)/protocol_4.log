@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.21)  24 JUL 2025 00:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.6.21)  25 JUL 2025 02:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -723,8 +723,11 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count396
 \@lastruleclass=\count397
 \@thisrulewidth=\dimen294
-)
-No file protocol_4.aux.
+) (./protocol_4.aux
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 5.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+))
 \openout1 = `protocol_4.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 159.
@@ -742,10 +745,6 @@ LaTeX Font Info:    ... okay on input line 159.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 159.
 LaTeX Font Info:    ... okay on input line 159.
 LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 159.
-LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 159.
-(/usr/local/texlive/2025/texmf-dist/tex/latex/cyrillic/t2acmr.fd
-File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-)
 LaTeX Font Info:    ... okay on input line 159.
 LaTeX Info: Redefining \th on input line 159.
 
@@ -1395,15 +1394,15 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 17650 strings out of 473190
- 356727 string characters out of 5715800
- 779769 words of memory out of 5000000
- 40590 multiletter control sequences out of 15000+600000
+ 17653 strings out of 473190
+ 356784 string characters out of 5715800
+ 779763 words of memory out of 5000000
+ 40591 multiletter control sequences out of 15000+600000
  573400 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,105p,567b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on protocol_4.pdf (13 pages, 146206 bytes).
+Output written on protocol_4.pdf (13 pages, 146182 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  54 compressed objects within 1 object stream
