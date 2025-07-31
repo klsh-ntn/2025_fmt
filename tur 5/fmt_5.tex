@@ -65,7 +65,9 @@
 \setmainlanguage{russian}
 \setotherlanguages{english}
 
-\setmainfont{UbuntuMono Nerd Font}
+\setmainfont{UbuntuMono Nerd Font Mono} % font name in archlinux
+% \setmainfont{UbuntuMono Nerd Font} 
+
 \usepackage{unicode-math}
 \setmathfont{Fira Math} % выбираем шрифт
 % можно также попробовать Helvetica, Arial, Cambria и т.Д.
@@ -124,29 +126,60 @@
 
 
 \newcommand{\easymath}{
-    Роме Лисину приснилось неравенство $x^2 + xy + y^2 \leq 0$. Найди все возможные $x$ и $y$.
+Перед отъездом Вика Луковская выдала двум бесконечно Мудрым Зондерам (... и ...) 
+по натуральному числу. 
+Саша Мацуев объявляет Мудрым Зондерам, что их натуральные числа отличаются на единицу,
+а далее каждую минуту одновременно спрашивает их: «Знаете ли вы теперь оба числа?»
+
+МЗ 50 раз одновременно ответили нет, а на 51-й вопрос ... ответил «да», а ... — «нет».
+
+Какое число и кому выдала Вика Луковская?
 }
 
 \newcommand{\soleasymath}{
-    Ответ: 
+    Если бы числа были 1 и 2, то игра бы окончилась на первом ходу ответами «да» и «нет».
+    Парный ответ «нет-нет» исключает единицу среди чисел. 
+    
+    Ответ: у «да» — 51, у «нет» — 52. 
 }
 
 \newcommand{\hardmath}{
-   Трапеция $KLSH$ имеет основания $KH = 10$ и $LS = 2$, причем в нее можно вписать окружность, а также описать ее.
-   Найди радиус вписанной в трапецию окружности.
+Около треугольника $ABC$ описана окружность радиуса $25$.
+Сторона $BC = 48$ разделена радиусом $OA$ на два равных отрезка.
+
+Собрав всю волю в кулак, найди периметр треугольника $ABC$.
 }
 
 \newcommand{\solhardmath}{
-    Ответ:
+    Поскольку $OB = OC$ точка $O$ лежит на серединном перпендикуляре к $BC$.
+    Отсюда находим периметр $48 + 2 \cdot 24 \sqrt{2} = 48 + 48\sqrt{2}$.
+
+    Ответ: $48 + 48\sqrt{2}$.
 }
 
+\newcommand{\easymathB}{
+В треугольник со сторонами $6$, $10$ и $12$ вписана окружность.
+К окружности проведена касательная, пересекающая две бóльшие стороны.
+
+Найди периметр остечённого треугольника. 
+}
+
+\newcommand{\soleasymathB}{
+
+    Ответ: $10 + 12 - 6 = 16$.
+}
+
+
+
 \newcommand{\veryhardmath}{
-    Трапеция $KLSH$ имеет основания $KH = 10$ и $LS = 2$, причем в нее можно вписать окружность, а также описать ее.
-    Найди радиус описанной около трапеции окружности.
+    Какое наименьшее число коней можно поставить на шахматной доске так, 
+    чтобы на любую свободную клетку можно было переместить одного из этих коней, 
+    сделав не более двух ходов?
 }
 
 \newcommand{\solveryhardmath}{
-    Ответ:
+    Ответ: 4 в самом центре доски. 
+    Трёх не хватит, можно рассмотреть клетки, достижимые из углов за один или два хода.
 }
 
 \newcommand{\easyphys}{
@@ -181,15 +214,9 @@
 
 }
 
-\begin{document}
-
-\judgediscussioneasy
-
-\begin{small}
-    \anecdote
-\end{small}
 
 
+\newcommand{\allproblemwithsol}{
 \begin{enumerate}
 \item \easymath
 
@@ -204,6 +231,53 @@
 
 \solhardphys
 \end{enumerate}
+}
+
+\newcommand{\allproblem}{
+\begin{enumerate}
+\item \easymath
+\item \hardmath
+\item \easyphys
+\item \hardphys
+\end{enumerate}
+}
+
+\newcommand{\TOPallproblemwithsol}{
+\begin{enumerate}
+\item \easymathB
+
+\soleasymathB
+\item \veryhardmath
+
+\solveryhardmath
+\item \easyphys
+
+\soleasyphys
+\item \hardphys
+
+\solhardphys
+\end{enumerate}
+}
+
+\newcommand{\TOPallproblem}{
+\begin{enumerate}
+\item \easymathB
+\item \veryhardmath
+\item \easyphys
+\item \hardphys
+\end{enumerate}
+}
+
+
+\begin{document}
+
+\judgediscussioneasy
+
+\begin{small}
+    \anecdote
+\end{small}
+
+\allproblemwithsol
 
 \newpage
 
@@ -213,21 +287,7 @@
     \anecdote
 \end{small}
 
-
-\begin{enumerate}
-\item \easymath
-
-\soleasymath
-\item \hardmath
-
-\solhardmath
-\item \easyphys
-
-\soleasyphys
-\item \hardphys
-
-\solhardphys
-\end{enumerate}
+\allproblemwithsol
 
 \newpage
 
@@ -239,20 +299,7 @@
 \end{small}
 
 
-\begin{enumerate}
-\item \hardmath
-
-\solhardmath
-\item \veryhardmath
-
-\solveryhardmath
-\item \easyphys
-
-\soleasyphys
-\item \veryhardphys
-
-\solveryhardphys
-\end{enumerate}
+\TOPallproblemwithsol
 
 \newpage
 
@@ -263,22 +310,8 @@
 \end{small}
 
 
-\begin{enumerate}
-\item \hardmath
+\TOPallproblemwithsol
 
-\solhardmath
-\item \veryhardmath
-
-\solveryhardmath
-\item \hardphys
-
-\solhardphys
-\item \veryhardphys
-
-\solveryhardphys
-\end{enumerate}
-
-%%% ТОП 3 СТОЛА %%%
 \newpage
 
 \judgenormal
@@ -287,45 +320,7 @@
     \judgenotes
 \end{small}
 
-\begin{enumerate}
-    \item \easymath 
-    
-    \soleasymath
-    \item \hardmath
-    
-    \solhardmath
-    \item \easyphys
-    
-    \soleasyphys
-    \item \hardphys
-    
-    \solhardphys
-\end{enumerate}
-
-
-
-\newpage % школьный экземпляр обычных столов
-\putlogo
-
-\begin{enumerate}
-    \item \easymath
-    \item \hardmath
-    \item \easyphys
-    \item \hardphys
-\end{enumerate}
-
-\vspace{1pt}
-
-\putlogo
-
-\begin{enumerate}
-    \item \easymath
-    \item \hardmath
-    \item \easyphys
-    \item \hardphys
-\end{enumerate}
-
-% \end{document} %% если деления задач по столам нет
+\allproblemwithsol
 
 \newpage 
 
@@ -335,41 +330,33 @@
     \judgenotes
 \end{small}
 
-\begin{enumerate}
-    \item \hardmath
-    
-    \solhardmath
-    \item \veryhardmath
-    
-    \solveryhardmath
-    \item \hardphys
-    
-    \solhardphys
-    \item \veryhardphys
-    
-    \solveryhardphys
-\end{enumerate}
+\TOPallproblemwithsol
+
+
+%% школьные экземпляры...
+
+\newpage % школьный экземпляр обычных столов
+\putlogo
+
+\allproblem
+
+\vspace{1pt}
+
+\putlogo
+
+\allproblem
+
+% \end{document} %% если деления задач по столам нет
 
 \newpage %% школьный экземпляр top3 столов
 
 \putlogo
 
-\begin{enumerate}
-    \item \hardmath
-    \item \veryhardmath
-    \item \hardphys
-    \item \veryhardphys
-\end{enumerate}
+\TOPallproblem
 
 \vspace{3.5pt}
 \putlogo
 
-\begin{enumerate}
-    \item \hardmath
-    \item \veryhardmath
-    \item \hardphys
-    \item \veryhardphys
-\end{enumerate}
-
+\TOPallproblem
 
 \end{document}
