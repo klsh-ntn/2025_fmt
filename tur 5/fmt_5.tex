@@ -93,11 +93,7 @@
 \newcommand{\anecdote}{Рубрика \textbf{анекдот} тура
     \begin{small}
     \begin{displayquote} 
-        \it Электрон тормозят за превышение. Полицейский подходит к машине и говорит: 
-
-        — Сэр, вы знаете с какой скоростью вы двигались? 
-
-        — Нет, и вообще, где я?!
+        \it Британские ученые выяснили, что если оттянуть яйца до колен, то в первую очередь порвутся голосовые связки.
     \end{displayquote}
     \end{small} % сюда пишем анекдот
 }
@@ -132,105 +128,57 @@
 }
 
 \newcommand{\soleasymath}{
-    Заметим $(x + y)^2 \leq xy$, тогда $xy \geq 0$, а значит они одного знака. Т.к. каждое слагаемое в неравенстве $\geq 0$, то единственное решение $x = y = 0$.
-
-    Ответ: $x = y = 0$
-
-    0 баллов - не обосновано, почему $(0,0)$ единственное; 1 балл - получено, что одинаковые знаки.
+    Ответ: 
 }
 
-\newcommand{\hardmathvpis}{
+\newcommand{\hardmath}{
    Трапеция $KLSH$ имеет основания $KH = 10$ и $LS = 2$, причем в нее можно вписать окружность, а также описать ее.
    Найди радиус вписанной в трапецию окружности.
 }
 
-\newcommand{\solhardmathvpis}{
-    Из условия следует, что $KL = SH = 6$. Высота $SD$ к основанию $KH$ равна $\sqrt{6^2 - r^2} = 2\sqrt{5}$. Радиус вписанной окружности $r = \frac{KH}{2} = \sqrt{5}$.
-
-    Ответ: $\sqrt{5}$
-
-    2 балла - показана равнобокость + найдена боковая сторона, но ошибка в поиске высоты;
+\newcommand{\solhardmath}{
+    Ответ:
 }
 
-\newcommand{\hardmathopis}{
+\newcommand{\veryhardmath}{
     Трапеция $KLSH$ имеет основания $KH = 10$ и $LS = 2$, причем в нее можно вписать окружность, а также описать ее.
     Найди радиус описанной около трапеции окружности.
 }
 
-\newcommand{\solhardmathopis}{
-    Из условия следует, что $KL = SH = 6$. Высота $SD$ к основанию $KH$ равна $\sqrt{6^2 - r^2} = 2\sqrt{5}$. Радиус вписанной окружности $r = \frac{KH}{2} = \sqrt{5}$. Диагональ $KS = \sqrt{6^2 + 20} = \sqrt{56}$. Угол $\angle KLS$: $\cos \phi = -\frac{2}{3} \Rightarrow \sin \phi = \frac{\sqrt{5}}{3}$. Радиус описанной окружности можно найти из $\Delta KLS$: $R = \frac{KS}{2\sin \phi} = \sqrt{\frac{56}{5}} \frac{3}{2}$. 
-
-    Ответ: $\sqrt{\frac{56}{5}} \frac{3}{2}$
-
-    1 балл - показана равнобокость + найдена боковая сторона; 2 балла - найдены три стороны треугольника для поиска радиуса описанной окружности.
-}
-
-\newcommand{\veryhardmath}{
-    Роме Лисину приснилась система неравенств 
-    \begin{equation*}
-        \begin{cases}
-            2x^2 + 2y^2 - 12x + 20y + 65 < 0\\
-            \frac{2y + 10}{\sqrt{2}} < 9-2x
-        \end{cases}
-    \end{equation*}
-    Найди количество целочисленных решений системы.
-}
-
 \newcommand{\solveryhardmath}{
-    Перепишем $(x - 3)^2 + (y + 5)^2 < 1.5$ - круг без границы радиуса $R = \sqrt{1.5}$. Таким образом, попадающие целые точки $(3,-5), (3,-4), (3,-6), (2,-4), (4,-5)$. Второе неравенство задают все точки ниже касательной к окружности, значит все решения подходят.
-
-    Ответ: 5 решений.
-
-    1 балл - указали, что это круг без границы; 2 балла - нашли все потенциальные целочисленные решения.
+    Ответ:
 }
 
 \newcommand{\easyphys}{
-    В сосуд с водой, уравновешенный на пружинных весах, Вова Носков опускает на нити рыбную котлету так, что она целиком погружается в воду, но не касается стенок сосуда. При этом показание весов меняются на $10\%$. 
-    Во сколько раз по сравнению с первоначальным изменится показание весов, если рыбную котлету положить на дно сосуда? Рыбная котлета в $5$ раз плотнее воды.
+    В кастрюлю налили воду из ведра и поставили ее на плиту. Через $30$ минут вода закипела. Тогда из того же ведра долили
+    в кастрюлю еще некоторое количество воды, в результате чего температура в ней понизилась на $12^{o}C$ . Но через 5 мин после этого вода
+    вновь закипела. Определите температуру воды в ведре.
 }
 
 \newcommand{\soleasyphys}{
-    Масса котлеты $m$, сосуда c водой $M$. Сила Архимеда: $V = \frac{m}{\rho_{\text{к}}}, \quad F_{\text{А}} = \rho_{\text{в}} V g = \rho_{\text{в}} \cdot \frac{m}{\rho_{\text{к}}} \cdot g$.
-    Груз на нити
-    \begin{equation*}
-    Mg + \rho_{\text{в}}\frac{m}{\rho_{\text{к}}}g = 1{.}10 \cdot Mg
-    \Rightarrow \frac{m}{M} = \frac{0.10 \cdot \rho_{\text{к}}}{\rho_{\text{в}}}
-    \end{equation*} 
-    Груз на дне $\frac{M + m}{M} = 1 + \frac{m}{M} = 1 + 0.10 \cdot \frac{\rho_{\text{к}}}{\rho_{\text{в}}} = 1.5$
 
-    Ответ: увеличится в $1.5$ раза.
-
-    1 балл - 3-й закон Ньютона; 2 балла - равенство сил.
+    Ответ: $16^{o}C$
 }
 
-\newcommand{\hardphysbold}{
-    \textbf{тур 6, 2005 год (30 сезон)} По вертикально расположенному обручу радиуса $R$ может без трения скользить колечко. Обруч вращается вокруг вертикальной диаметральной оси. Колечко находится в равновесии на высоте $h$ ($0 < h < R$) от нижней точки обруча. 
-    Найти угловую скорость $\omega$ вращения обруча.
+\newcommand{\hardphys}{
+    Мяч свободно падает с высоты $h = 15$ м на горизонтальную поверхность. При каждом отскоке его скорость уменьшается в $n = 2$ раза. Найти путь, пройденный мячом до полной остановки.
 }
 
-\newcommand{\solhardphysbold}{
-    Угол от оси вращения к кольцу (из геометрии) $\cos \alpha = \frac{R-h}{R}$. Пишем 2-й закон Ньютона для вращения
+\newcommand{\solhardphys}{
+    Кинитическая энергия после каждого удара будет уменьшатся в $n^2 = 4$ раза (так как $v/n$). Значит потенциальная энергия в верхней точке тоже будет уменьшаться в $n^2$ раз, как и высота. Таким образом путь
     \begin{equation*}
-        m\omega^2R\sin \alpha = N\sin \alpha,\quad N\cos \alpha = mg \Rightarrow \omega = \sqrt{\frac{g}{R-h}}
+    S = \sum_{k = 0}^{\infty} h \bigl(\frac{1}{n^2}\bigr)^k = h \frac{1}{1 - \frac{1}{n^2}} = h\frac{n^2}{n^2 - 1} = 20\ \text{м}
     \end{equation*}
-    Ответ: $\sqrt{\frac{g}{R-h}}$
 
-    1 балл - 2-ой закон Ньютона; 2 балла - предыдущее + угол из геометрии.
+    Ответ: $20$ м
 }
 
-\newcommand{\hardphyshair}{
-    \textbf{тур 2, 2012 год (37 сезон)} Массы двух звезд равны $m_1$ и $m_2$ ($m_2 > m_1$), расстояние между ними равно $L$. Найти период обращения этих звезд по круговым орбитам вокруг их центра масс.
+\newcommand{\veryhardphys}{
+    Найдите сопротивление цепи между точками $A$ и $B$, если сопротивление отрезка провода между $A$ и $D$ равно $R$, все фигуры на рисунке являются квадратами, которых бесконечно много. Стороны квадратов соотносятся как показано на рисунке.
 }
 
-\newcommand{\solhardphyshair}{
-    Вводим СК посередине между звездами. В этой СК координата центра масс: $x_{\text{ц.м.}} = \frac{L}{2} \frac{m_2 - m_1}{m_2 + m_1}$.
-    Из 2-го закона Ньютона для $m_1$:
-    \begin{equation*}
-        m_1 \omega^2 (\frac{L}{2}   + x_{\text{ц.м.}}) = G\frac{m_1 m_2}{L^2}  \Rightarrow \omega^2 = \frac{G}{L^3} (m_1 + m_2) \Rightarrow T = 2\pi \sqrt{\frac{L^3}{G(m_1 + m_2)}}
-    \end{equation*}
-    Ответ: $T = 2\pi \sqrt{\frac{L^3}{G(m_1 + m_2)}}$
-   
-    1 балл - получен центр масс; 2 балла - 2-ой закон Ньютона; 3 балла - добил до периода/частоты.
+\newcommand{\solveryhardphys}{
+
 }
 
 \begin{document}
@@ -246,15 +194,15 @@
 \item \easymath
 
 \soleasymath
-\item \hardmathvpis
+\item \hardmath
 
-\solhardmathvpis
+\solhardmath
 \item \easyphys
 
 \soleasyphys
-\item \hardphysbold
+\item \hardphys
 
-\solhardphysbold
+\solhardphys
 \end{enumerate}
 
 \newpage
@@ -270,15 +218,15 @@
 \item \easymath
 
 \soleasymath
-\item \hardmathvpis
+\item \hardmath
 
-\solhardmathvpis
+\solhardmath
 \item \easyphys
 
 \soleasyphys
-\item \hardphysbold
+\item \hardphys
 
-\solhardphysbold
+\solhardphys
 \end{enumerate}
 
 \newpage
@@ -292,18 +240,18 @@
 
 
 \begin{enumerate}
-\item \hardmathopis
+\item \hardmath
 
-\solhardmathopis
+\solhardmath
 \item \veryhardmath
 
 \solveryhardmath
 \item \easyphys
 
 \soleasyphys
-\item \hardphyshair
+\item \veryhardphys
 
-\solhardphyshair
+\solveryhardphys
 \end{enumerate}
 
 \newpage
@@ -316,18 +264,18 @@
 
 
 \begin{enumerate}
-\item \hardmathopis
+\item \hardmath
 
-\solhardmathopis
+\solhardmath
 \item \veryhardmath
 
 \solveryhardmath
-\item \easyphys
+\item \hardphys
 
-\soleasyphys
-\item \hardphyshair
+\solhardphys
+\item \veryhardphys
 
-\solhardphyshair
+\solveryhardphys
 \end{enumerate}
 
 %%% ТОП 3 СТОЛА %%%
@@ -343,15 +291,15 @@
     \item \easymath 
     
     \soleasymath
-    \item \hardmathvpis
+    \item \hardmath
     
-    \solhardmathvpis
+    \solhardmath
     \item \easyphys
     
     \soleasyphys
-    \item \hardphysbold
+    \item \hardphys
     
-    \solhardphysbold
+    \solhardphys
 \end{enumerate}
 
 
@@ -361,9 +309,9 @@
 
 \begin{enumerate}
     \item \easymath
-    \item \hardmathvpis
+    \item \hardmath
     \item \easyphys
-    \item \hardphysbold
+    \item \hardphys
 \end{enumerate}
 
 \vspace{1pt}
@@ -372,9 +320,9 @@
 
 \begin{enumerate}
     \item \easymath
-    \item \hardmathvpis
+    \item \hardmath
     \item \easyphys
-    \item \hardphysbold
+    \item \hardphys
 \end{enumerate}
 
 % \end{document} %% если деления задач по столам нет
@@ -388,18 +336,18 @@
 \end{small}
 
 \begin{enumerate}
-    \item \hardmathopis
+    \item \hardmath
     
-    \solhardmathopis
+    \solhardmath
     \item \veryhardmath
     
     \solveryhardmath
-    \item \easyphys
+    \item \hardphys
     
-    \soleasyphys
-    \item \hardphyshair
+    \solhardphys
+    \item \veryhardphys
     
-    \solhardphyshair
+    \solveryhardphys
 \end{enumerate}
 
 \newpage %% школьный экземпляр top3 столов
@@ -407,20 +355,20 @@
 \putlogo
 
 \begin{enumerate}
-    \item \hardmathopis
+    \item \hardmath
     \item \veryhardmath
-    \item \easyphys
-    \item \hardphyshair
+    \item \hardphys
+    \item \veryhardphys
 \end{enumerate}
 
 \vspace{3.5pt}
 \putlogo
 
 \begin{enumerate}
-    \item \hardmathopis
+    \item \hardmath
     \item \veryhardmath
-    \item \easyphys
-    \item \hardphyshair
+    \item \hardphys
+    \item \veryhardphys
 \end{enumerate}
 
 
