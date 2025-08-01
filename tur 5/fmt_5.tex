@@ -226,14 +226,12 @@
 }
 
 \newcommand{\veryhardphys}{
-   \begin{minipage}
+   \begin{minipage}{0.7\linewidth}
         Найдите сопротивление цепи между точками $A$ и $B$, если сопротивление отрезка провода между $A$ и $D$ равно $R$, все фигуры на рисунке являются квадратами, которых бесконечно много и они изготовлены из одной и той же проволоки. Стороны квадратов соотносятся как показано на рисунке.
-    \end{minipage}
-    \begin{minipage}
-        \begin{figure}[h!]
-            \centering{\includegraphics[scale=0.08]{hard_1.png}}
-        \end{figure}
-   \end{minipage}
+  \end{minipage} %%
+ \begin{minipage}{0.2\linewidth}
+            \centering{\includegraphics[width=\linewidth]{hard_1.png}}
+ \end{minipage} %%
 }
 
 \newcommand{\solveryhardphys}{
@@ -301,6 +299,7 @@
 \item \veryhardphys
 \end{enumerate}
 }
+
 
 
 \begin{document}
@@ -392,5 +391,8 @@
 \putlogo
 
 \TOPallproblem
+
+
+\newpage
 
 \end{document}
