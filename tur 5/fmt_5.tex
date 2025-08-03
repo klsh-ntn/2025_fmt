@@ -92,6 +92,26 @@
 
 
 \newcommand{\shortname}{ФМТ: Тур 5} % тут каждый раз меняем на новый тур
+
+% судейский экземляр выглядит так:
+% заголовок \HeaderDiscussionMain или \HeaderGameMain
+% анекдот \anecdote или напоминалка правил \judgenotes (анекдот при обсуждении, напоминалка правил в игре)
+% задачи с решениями \MainTables или \TopTables
+
+% школьный экземпляр выглядит так:
+% заголовок \putlogo
+% задачи без решения \MainTables или \TopTables
+
+% всё это варьируется на основные столы (Main) и топ-столы (Top)
+
+
+\newcommand{\HeaderDiscussionMain}{\textbf{TOP SECRET!!! Сдай листок или съешь его!!!} \hspace*{1cm} \textbf{\shortname} \hspace*{1cm} \textbf{Разбор задач. Обычные столы.}}
+\newcommand{\HeaderDiscussionTop}{\textbf{TOP SECRET!!! Сдай листок или съешь его!!!} \hspace*{1cm} \textbf{\shortname} \hspace*{1cm} \textbf{Разбор задач. top-3 столы.}}
+\newcommand{\HeaderGameMain}{\textbf{TOP SECRET!!! Судейский экземпляр!!!} \hspace*{1cm} \textbf{\shortname} \hspace*{1cm} \textbf{Обычные столы}}
+\newcommand{\HeaderGameTop}{\textbf{TOP SECRET!!! Судейский экземпляр!!!} \hspace*{1cm} \textbf{\shortname} \hspace*{1cm} \textbf{top-3 столы}}
+
+
+% анекдот используется только судьями и только при обсуждении
 \newcommand{\anecdote}{Рубрика \textbf{анекдот} тура
     \begin{small}
     \begin{displayquote} 
@@ -100,10 +120,16 @@
     \end{small} % сюда пишем анекдот
 }
 
-\newcommand{\judgediscussioneasy}{\textbf{TOP SECRET!!! Сдай листок или съешь его!!!} \hspace*{1cm} \textbf{\shortname} \hspace*{1cm} \textbf{Разбор задач. Обычные столы.}}
-\newcommand{\judgediscussionhard}{\textbf{TOP SECRET!!! Сдай листок или съешь его!!!} \hspace*{1cm} \textbf{\shortname} \hspace*{1cm} \textbf{Разбор задач. top-3 столы.}}
-\newcommand{\judgenormal}{\textbf{TOP SECRET!!! Судейский экземпляр!!!} \hspace*{1cm} \textbf{\shortname} \hspace*{1cm} \textbf{Обычные столы}}
-\newcommand{\judgetop}{\textbf{TOP SECRET!!! Судейский экземпляр!!!} \hspace*{1cm} \textbf{\shortname} \hspace*{1cm} \textbf{top-3 столы}}
+% заметки используются только судьями и входят в игровой экземпляр
+\newcommand{\judgenotes}{
+    За одну итерацию оппонирования можно получить максимум 1 балл. 
+    Вольные стрелки приносят команде от 0 до 3 баллов. 
+    Штрафы за выход за три минуты при решении своей задачи: от 0 до 30 секунд — 1 балл штрафа, 
+    от 30 до 60 секунд — 2 балла штрафа и далее 3 балла штрафа.
+    Вольные стрелки не могут заявлять одну задачу более одного раза.
+}
+
+
 
 \newcommand{\putlogo}{
 \begin{center}
@@ -116,16 +142,9 @@
 \end{center}
 }
 
-\newcommand{\judgenotes}{
-    За одну итерацию оппонирования можно получить максимум 1 балл. 
-    Вольные стрелки приносят команде от 0 до 3 баллов. 
-    Штрафы за выход за три минуты при решении своей задачи: от 0 до 30 секунд — 1 балл штрафа, 
-    от 30 до 60 секунд — 2 балла штрафа и далее 3 балла штрафа.
-    Вольные стрелки не могут заявлять одну задачу более одного раза.
-}
+%%% ПРАВИМ СОДЕРЖИМОЕ ЗАДАЧ НИЖЕ ЭТОЙ ЛИНИИ:
 
-
-\newcommand{\easymath}{
+\newcommand{\mathA}{
 Перед отъездом Вика Луковская выдала двум бесконечно Мудрым Зондерам Дане Нефедову и Егору Копылову
 по натуральному числу. 
 Саша Мацуев объявляет Мудрым Зондерам, что их натуральные числа отличаются на единицу,
@@ -136,7 +155,7 @@
 Какое число и кому выдала Вика Луковская?
 }
 
-\newcommand{\soleasymath}{
+\newcommand{\mathAsol}{
     Если бы числа были 1 и 2, то игра бы окончилась на первом ходу ответами «да» и «нет».
     Парный ответ «нет-нет» исключает единицу среди чисел. 
     
@@ -145,14 +164,14 @@
     2 балла - перепутали числа/ не дошли до 51
 }
 
-\newcommand{\hardmath}{
+\newcommand{\mathB}{
 Около треугольника $ABC$ описана окружность радиуса $25$.
 Сторона $BC = 48$ разделена радиусом $OA$ на два равных отрезка.
 
 Собрав всю волю в кулак, найди периметр треугольника $ABC$.
 }
 
-\newcommand{\solhardmath}{
+\newcommand{\mathBsol}{
     Поскольку $OB = OC$ точка $O$ лежит на серединном перпендикуляре к $BC$.
     Отсюда находим периметр $48 + 30 + 30 = 108$.
 
@@ -161,14 +180,14 @@
     1 балл - Пифагор имени Демешева и найден периметр; 2 балла - Пифагор имени Ламзина, но периметр найден с ошибкой; лишний рассмотренный случай - возможный балл на оппонировании;
 }
 
-\newcommand{\easymathB}{
+\newcommand{\mathC}{
 В треугольник со сторонами $6$, $10$ и $12$ вписана окружность.
 К окружности проведена касательная, пересекающая две бóльшие стороны и не параллельная третьей.
 
-Найди периметр остечённого треугольника. 
+Найди периметр отсечённого треугольника. 
 }
 
-\newcommand{\soleasymathB}{
+\newcommand{\mathCsol}{
     Ответ: $10 + 12 - 6 = 16$.
 
     2 балла - арифметическая ошибка; 
@@ -176,26 +195,26 @@
 
 
 
-\newcommand{\veryhardmath}{
+\newcommand{\mathD}{
     Какое наименьшее число коней можно поставить на шахматной доске так, 
     чтобы на любую свободную клетку можно было переместить одного из этих коней, 
     сделав не более двух ходов?
 }
 
-\newcommand{\solveryhardmath}{
+\newcommand{\mathDsol}{
     Ответ: 4 в самом центре доски. 
     Трёх не хватит, можно рассмотреть клетки, достижимые из углов за один или два хода.
 
     1 балл - пример; 2 балл - оценка; 3 балла - оценка + пример; полный перебор оценки останавливаем
 }
 
-\newcommand{\hardphys}{
+\newcommand{\physA}{
     Боря Демешев налил в кастрюлю воду из ведра и поставил ее на плиту. Через $30$ минут вода закипела. Тогда из того же ведра он долил
     в кастрюлю еще некоторое количество воды, в результате чего температура в ней понизилась на $12^{o}C$ . Но через 5 мин после этого вода
     вновь закипела. Определи температуру воды в ведре. Теплопотерями пренебречь.
 }
 
-\newcommand{\solhardphys}{
+\newcommand{\physAsol}{
     Пусть $m_1$ - масса изначальной воды, $m_2$ - масса долитой воды. Уравнения теплового обмена: $m_1 \cdot 100 + m_2\cdot T_{\text{в}} = (m_1 + m_2) \cdot 88$. Нагрев воды за 5 минут $Q_5 = c(m_1 + m_2) \cdot 12$, за 30 минут $Q_{30} = cm_1(100 - T_{\text{в}})$. Так как $Q_{30} = 6 Q_{5}$, тогда 
     \begin{equation*}
         \begin{cases}
@@ -210,11 +229,11 @@
     1 балл - система уравнений; 2 балла - квадратное уравнение; 3 балла - верный ответ
 }
 
-\newcommand{\easyphys}{
+\newcommand{\physB}{
     Мяч свободно падает с высоты $h = 15$ м на горизонтальную поверхность. При каждом отскоке его скорость уменьшается в $n = 2$ раза. Найди путь, пройденный мячом до полной остановки.
 }
 
-\newcommand{\soleasyphys}{
+\newcommand{\physBsol}{
     Кинетическая энергия после каждого удара будет уменьшатся в $n^2 = 4$ раза (так как $v/n$). Значит потенциальная энергия в верхней точке тоже будет уменьшаться в $n^2$ раз, как и высота. Таким образом путь
     \begin{equation*}
     S = h + 2\sum_{k = 1}^{\infty} h \bigl(\frac{1}{n^2}\bigr)^k = \frac{h}{2}(2 + \frac{1}{1 - \frac{1}{n^2}}) = \frac{h}{2} \frac{3n^2 - 2}{n^2 - 1} = 25\ \text{м}
@@ -225,7 +244,7 @@
     1 балл - ; 2 балла - арифметическая ошибка; забыл умножить на 2 и т.д.; сложил >= 3 слагаемых - 3 балла
 }
 
-\newcommand{\veryhardphys}{
+\newcommand{\physC}{
    \begin{minipage}{0.7\linewidth}
         Найдите сопротивление цепи между точками $A$ и $B$, если сопротивление отрезка провода между $A$ и $D$ равно $R$, все фигуры на рисунке являются квадратами, которых бесконечно много и они изготовлены из одной и той же проволоки. Стороны квадратов соотносятся как показано на рисунке.
   \end{minipage}\hfill
@@ -234,7 +253,7 @@
  \end{minipage} %%
 }
 
-\newcommand{\solveryhardphys}{
+\newcommand{\physCsol}{
     Заменить квадраты меньше на $\frac{R_{\text{общ}}}{2} $, тогда: 
     \begin{equation*}
         \frac{1}{R_{\text{общ}}} = \frac{1}{2R} + \frac{1}{R + \frac{1}{2} R_{\text{общ}}}
@@ -246,153 +265,147 @@
     1 балл - эквивалентный резистор; 2 балла - формула на общее сопротивление; ошибься с реккурсией, но дошел до ответа - 2 балла
 }
 
+\newcommand{\physD}{
+}
 
+\newcommand{\physDsol}{    
+}
 
-\newcommand{\allproblemwithsol}{
+%%% ПРАВИМ КОМПОНОВКУ ТУРА НИЖЕ ЭТОЙ ЛИНИИ:
+
+\newcommand{\MainTables}{
 \begin{enumerate}
-\item \easymath
+\item \mathA
 
-\soleasymath
-\item \hardmath
+\mathAsol
+\item \mathB
 
-\solhardmath
-\item \easyphys
+\mathBsol
+\item \physB
 
-\soleasyphys
-\item \hardphys
+\physBsol
+\item \physA
 
-\solhardphys
+\physAsol
 \end{enumerate}
 }
 
-\newcommand{\allproblem}{
+\newcommand{\TopTables}{
 \begin{enumerate}
-\item \easymath
-\item \hardmath
-\item \easyphys
-\item \hardphys
+\item \mathC
+
+\mathCsol
+\item \mathD
+
+\mathDsol
+\item \physA
+
+\physAsol
+\item \physC
+
+\physCsol
 \end{enumerate}
 }
 
-\newcommand{\TOPallproblemwithsol}{
-\begin{enumerate}
-\item \easymathB
-
-\soleasymathB
-\item \veryhardmath
-
-\solveryhardmath
-\item \hardphys
-
-\solhardphys
-\item \veryhardphys
-
-\solveryhardphys
-\end{enumerate}
-}
-
-\newcommand{\TOPallproblem}{
-\begin{enumerate}
-\item \easymathB
-\item \veryhardmath
-\item \hardphys
-\item \veryhardphys
-\end{enumerate}
-}
-
-
+%%% НИЖЕ ЭТОЙ ЛИНИИ СКОРЕЕ ВСЕГО НИЧЕГО ПРАВИТЬ НЕ НАДО
 
 \begin{document}
 
-\judgediscussioneasy
+\HeaderDiscussionMain % судейский экземпляр для обсуждения обычных столов
 
 \begin{small}
     \anecdote
 \end{small}
 
-\allproblemwithsol
+\MainTables
 
 \newpage
 
-\judgediscussioneasy
+\HeaderDiscussionMain % судейский экземпляр для обсуждения обычных столов
 
 \begin{small}
     \anecdote
 \end{small}
 
-\allproblemwithsol
+\MainTables
 
 \newpage
 
-%%% ТОП-3 СТОЛА %%%
-\judgediscussionhard
+\HeaderDiscussionTop % судейский экземпляр для обсуждения ТОП столов
+% может содержать анекдоты и прочий ограниченный контент
 
 \begin{small}
     \anecdote
 \end{small}
 
-
-\TOPallproblemwithsol
+\TopTables
 
 \newpage
 
-\judgediscussionhard
+\HeaderDiscussionTop % судейский экземпляр для обсуждения ТОП столов
 
 \begin{small}
     \anecdote
 \end{small}
 
-
-\TOPallproblemwithsol
+\TopTables
 
 \newpage
 
-\judgenormal
+\HeaderGameMain % судейский экземпляр на игру обычных столов
+% утечка после игры возможна, хотя и нежелательна
 
 \begin{small}
     \judgenotes
 \end{small}
 
-\allproblemwithsol
+\MainTables
 
-\newpage 
+\newpage % судейский экземпляр на игру ТОП столов
+% утечка после игры возможна, хотя и нежелательна
 
-\judgetop
+\HeaderGameTop
 
 \begin{small}
     \judgenotes
 \end{small}
 
-\TOPallproblemwithsol
+\TopTables
 
 
-%% школьные экземпляры...
+%% школьные экземпляры... 
+% зануляем решения :)
+\renewcommand{\mathAsol}{}
+\renewcommand{\mathBsol}{}
+\renewcommand{\mathCsol}{}
+\renewcommand{\mathDsol}{}
+\renewcommand{\physAsol}{}
+\renewcommand{\physBsol}{}
+\renewcommand{\physCsol}{}
+\renewcommand{\physDsol}{}
+
 
 \newpage % школьный экземпляр обычных столов
 \putlogo
 
-\allproblem
+\MainTables
 
 \vspace{1pt}
 
 \putlogo
 
-\allproblem
-
-% \end{document} %% если деления задач по столам нет
+\MainTables
 
 \newpage %% школьный экземпляр top3 столов
 
 \putlogo
 
-\TOPallproblem
+\TopTables
 
 \vspace{3.5pt}
 \putlogo
 
-\TOPallproblem
+\TopTables
 
-
-\newpage
 
 \end{document}
