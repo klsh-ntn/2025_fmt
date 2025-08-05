@@ -7,7 +7,7 @@
 % и 
 % \newcommand{\blockofjudges}{...}
 
-\newcommand{\tour}{Взрослый ФМТ} % номер тура
+\newcommand{\tour}{Финал ФМТ} % номер тура
 
 \newcommand{\blockofjudges}{
 
@@ -27,11 +27,9 @@
 % пустой протокол для ручного заполнения
 % пустой протокол для ручного заполнения
 % day 0
-\protocol{1.1}{$\quad$}{$\quad$}{Боря Демешев, Роберт Гринштейн, Саша Акантьев, Рома Лисин}{Тима Спрыжков, Марина Хмельницкая, Егор Лунев, Вова Федоров}
+\protocol{2.2}{$\eta$}{$\tau$}{Рома Лисин}{Роберт Гринштейн, Ваня Адо, Ян Шапиро, Егор Лунев, Лев Назаров}
 
-\protocol{2.1}{$\quad$}{$\quad$}{Андрей Манзов, Полина Хитрун, Настя Рыбакова, Лиза Зырянова, Ксюша Новикова}{Арина Рябушкина, Соня Бахова, Полина Юхновец, Соня Путинцева, Арина Медведева}
-
-\protocol{3.1}{$\quad$}{$\quad$}{Вова Носков, Ярик Федулов, Влада Синицына, Паша Рябенко, Миша Красков}{Герман Злобин, Егор Скурковин, Андрей Трегубович, Саша Тимошков, Настя Судницына, Никита Терентьев}
+\protocol{3.2}{$\nu$}{$\alpha$}{Вова Федоров}{Боря Демешев, Сережа Ламзин, Андрей Трегубович, Марина Хмельницкая, Вова Носков}
 }
 
 \usepackage[utf8]{inputenc}
@@ -73,8 +71,8 @@
 \end{minipage}
 \begin{minipage}{.6\textwidth}
     \begin{flushleft}
-    \textbf{Старший судья}: \\ 
-    \textbf{Судьи}:  \\ 
+    \textbf{Старший судья}: #4\\ 
+    \textbf{Судьи}: #5 \\ 
     \textbf{Аудитория}: #1 \\ 
     \end{flushleft}
 \end{minipage}
@@ -114,8 +112,6 @@ $\leftarrow$ переход от #3 к #2 \\
 \hline
 \textbf{} & #2 & #3 \\
 \hline
-Вольные стрелки & & \\ [0.8cm]
-\hline
 Итог основного этапа & & \\ [0.8cm]
 \hline 
 \end{tabular}
@@ -126,55 +122,24 @@ $\leftarrow$ переход от #3 к #2 \\
 \vspace*{0.5cm}
 \textbf{Подписи судей:}\dotfill\\
 \end{minipage}
+\hspace*{0.5cm}
+\begin{minipage}{.55\textwidth}
+\begin{tabular}{ | m{5cm} | M{2.3cm} | M{2.3cm} |}
+\hline
+\textbf{Этап обмена ударами} & #2 & #3 \\
+\hline 
+\vspace*{0.4cm}Решение задачи соперника\vspace*{1cm} Докладчик & & \\ [1.6cm]
+\hline
+Штраф за незнание & & \\ [0.6cm]
+\hline
+Дисциплинарный штраф & & \\ [0.6cm]
+\hline
+Красота обменной задачи & & \\ [0.6cm]
+\hline
+\textbf{Итоговый счёт} & & \\ [0.6cm]
+\hline
+\end{tabular}
+\end{minipage}
 \newpage
 }
-
-
-\setlength\parindent{0pt}
-\begin{document}
-
-
-\blockofjudges
-
-\renewcommand{\protocol}[5]{
-    #2 & #1 \\ 
-    \hline 
-}
-
-{\Huge 
-\begin{center}
-   \bf \tour \\
-    \vspace{3cm}
-    \begin{tabular}{| M{6cm} | M{6cm} |}
-    \hline
-    Матч & Аудитория\\ 
-    \hline
-    \blockofjudges
-    \end{tabular}
-    \end{center}
-}
-
-\newpage
-\renewcommand{\protocol}[5]{
-    #2 & #1 & #4, #5\\ 
-    \hline 
-}
-
-{\Large
-\begin{center}
-   \bf \tour \\
-    \vspace{3cm}
-    \begin{tabular}{| c | c | M{10cm} |}
-    \hline
-    Матч & Аудитория & Участники\\ 
-    \hline
-    \blockofjudges
-    \end{tabular}
-    
-    \vspace{2cm}
-    Разбейтесь на команды на месте!!!
-    \end{center}
-}
-
-
 \end{document}
